@@ -1,0 +1,501 @@
+body {
+  padding-top: 50px;
+  /* 생략 */
+}
+* {
+  margin:0;
+  padding:0;
+  background: #212121;
+}
+
+/*상단바*/
+a:link, a:visited {
+      color:#C9AA71;
+        text-decoration: none;
+}
+a:hover {
+      color:#F2E7D0;
+        text-decoration: none;
+}
+nav {
+  width:100vw;
+  height:auto;
+  background:#212121;
+  font-size:1.2em;
+  font-weight:bold;
+  position:fixed;
+  border-bottom:1px solid #C9AA71;
+  top: 0;
+  left: 0;
+  right: 0;
+  float: left;
+    z-index: 2;
+}
+nav img{
+    width:30px;
+    display: block;
+    position:static;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+
+nav ul {
+  display: none;
+  height: auto;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  text-align:center;
+  border-bottom: 1px solid #CCAD64;
+
+}
+nav ul li a {
+  line-height:50px;
+  color:black;
+}      
+nav a#trigger {
+  display:block;
+  background-color:#212121;
+  width:80%;
+  padding-left:15px;
+  line-height:40px;    
+  position:relative;
+  float: left;
+  text-align: center;
+
+}
+@media screen and (min-width:800px) {
+  nav {
+    height: 50px;
+    
+  }
+  nav ul {
+    list-style: none;
+    display:block;
+    width:700px;
+    height:50px;
+    padding: 0;
+    margin:0 auto;        
+    display:flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    flex:1;
+    flex-basis:22%;;   
+    border-bottom:0;
+    margin-right:-6px;
+  }
+  nav ul li:last-child {
+    border-right: 1;
+  } 
+  nav ul li a{
+    font-size:1em;
+    line-height:50px;
+  }
+  nav a#trigger {
+    display: none;
+  }
+    nav img {
+        width: 40px;
+    }
+  
+}
+
+/*여기까지 상단바였습니다*/
+
+section {
+  width:100vw;
+  position:static;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+section:nth-child(odd) {
+  background-color:#212121;
+}
+.section-title {
+  margin:30px auto 50px auto;
+}
+.section-title h3{
+  font-size:1.8em;
+  text-align: center;
+
+}
+.wrapper {
+  background:transparent;
+}
+
+.wrapper_img{
+    width:100%;
+    max-height: 300px;   
+    overflow: hidden;
+}
+.wrapper_img img{
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width:100px){
+/*
+    section{
+        max-width:100%;
+        margin:0 auto;
+    }
+*/
+    .wrapper{
+        max-width:100%;
+        margin:0 auto;
+    }
+    .wrapper_img{
+        height: 200px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
+.banner {
+  max-width:100%;
+  margin:0 auto;
+
+}
+.menutext{
+    color: #D4C6A9;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 1000px;
+    height: 1px;
+    padding-left: 30px;
+    display:flex;   
+}
+.menutext background{
+        justify-content:center;
+        align-items:center;
+}
+.menutext #text{
+    position: absolute;
+    bottom: 5px;
+}
+/*여기까지 배너*/
+
+.wrapper2 {
+  border-bottom:1px solid #C9AA71;
+  background:transparent;
+}
+@media screen and (min-width:1200px) {
+  .wrapper2{
+    max-width:1000px;
+    margin:0 auto;
+  }
+}
+
+.header-block {
+  margin:10px auto 40px auto;
+    display: inline;
+}
+
+
+.header-block div{
+    display: inline;
+    color: antiquewhite;
+    text-align: right;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header-block div span{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.header-block h3{
+  font-size:1.8em;
+  color: #C8BBA0;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-block h1{
+    display: inline;
+    color: antiquewhite;
+    text-align: right;
+}
+
+.header-block h1 a{
+    display: inline;
+}
+
+.intro{
+    
+}
+
+.intro_div1{
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.intro_div1 div{
+    display: inline;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 1px;
+    border: 0.5px solid #C9AA71;
+    
+}
+
+.intro_div1 img{
+    height: 100%;
+    margin:0 auto; 
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+@media screen and (min-width:1200px){
+
+    .wrapper3{
+        display: none;
+    }
+    .wrapper4{
+        display: none;
+    }
+    body{
+        padding-top: 50px;
+    }
+    .menutext{
+        width: 1000px;
+    }
+    .menutext #text{
+        left: 250px;
+    }
+}
+
+.wrapper3 {
+  border-bottom:1px solid #C9AA71;
+  padding-top:10px;
+  padding-bottom:40px;
+  width: 768px;
+  background:transparent;
+}
+
+
+@media screen and (max-width:1200px) and (min-width:768px){
+    .wrapper2{
+        display: none;
+    }
+    .wrapper4{
+        display: none;
+    }
+    .wrapper3{
+        min-width:800px;
+        margin:0 auto;
+    }
+        body{
+        padding-top: 50px;
+    }
+    .intro_div2{
+    display:flex;
+    justify-content: space-between
+    
+    }
+    .intro_div2 img{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .menutext #text{
+        bottom:5px;
+        left : 150px;
+    }
+    .menutext{
+        min-width: 800px;
+    }
+}
+
+.intro_div2{
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.intro_div2 div{
+    display: inline;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin: 1px;
+    border: 0.5px solid #C9AA71;
+    
+}
+
+.intro_div2 img{
+    height: 100%;
+    margin:0 auto; 
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+.wrapper4 {
+  border-bottom:1px solid #C9AA71;
+  background:transparent;
+}
+
+@media screen and (max-width:768px){
+    .wrapper2{
+        display: none;
+    }
+    .wrapper3{
+        display: none;
+    }
+    .wrapper4{
+        max-width:768px;
+        margin:0 auto;
+    }
+    body{
+        padding-top: 40px;
+    }
+    .intro_div3{
+    display:flex;
+    justify-content: space-between
+    
+    }
+    .intro_div3 img{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .menutext #text{
+        left: 20px;
+        bottom: 150px;
+        font-size: 22px;
+    }
+}
+
+.intro_div3{
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.intro_div3 div{
+    display: inline;
+    width: 380px;
+    height: 220px;
+    overflow: hidden;
+    margin: 1px;
+    border: 0.5px solid #C9AA71;
+    
+}
+
+.intro_div3 img{
+    margin:0 auto; 
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+@media screen and (max-width:768px)and (min-width:600px){
+    .intro_div3 img{
+        width:100%
+    }
+}
+
+@media screen and (max-width:600px){
+    .intro_div3 img{
+        height:100%
+    }
+}
+
+/*여기서부터 자랑게시판*/
+.boardintro ul {
+  display: inline-block;
+  height: auto;
+  color:azure;
+  position: static;
+}
+.boardintro ul li {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #CCAD64;
+  padding-left: 10px;
+    position: static;
+    color: #D4C6A9;
+}
+.boardintro ul li:first-child {
+  border-top: 2px solid #CCAD64;
+}
+
+.boardintro{
+   display: inline-block;
+   position: relative;
+}
+
+.boardintro div{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+    .boardintro ul li{
+          padding-top: 5px;
+          padding-bottom: 5px;
+    }
+.time{
+    float: right;
+}
+
+.boardintro ul{
+    display: inline-block;
+    width: 1000px;
+    height:100%;
+}
+@media screen and (min-width:1200px){
+    
+
+}
+
+@media screen and (max-width:1200px) and (min-width:768px){
+
+    .boardintro ul{
+    width: 700px;
+    }
+
+}
+@media screen and (max-width:768px){
+    .boardintro ul{
+          width:100%;
+    }
+}
+@media screen and (max-width:768px) and (min-width:600px){
+    .boardintro ul{
+          width:100%;
+    }
+}
+
+.footer-logo a{
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    background: transparent 
+        url("/images/caticon.png") no-repeat;
+    background-size: contain;
+    width: 60px;
+    color: white;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.2s liner;
+    
+}
+.footer-logo {
+    border-top :1px solid #CCAD64;
+    border-bottom :1px solid #CCAD64;
+    padding: 10px;
+}
